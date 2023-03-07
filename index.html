@@ -1,36 +1,152 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>User login check</title>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
 
 <body>
-	
-<script src="js/psw.js"></script><!--密码定义在 psw.js 里面-->
-<script>
-	function password() {		
-		var testV = 1;//计数器，记录密码错误次数
-		var psw = prompt("输入密码  | Input Key");
-		while (testV < 3) {
-			if (!psw){
-				history.go(-1);//密码错误返回上一页
+	<script src="js/psw.js"></script><!--密码定义在 psw.js 里面-->
+	<script>
+		function password() {		
+			var testV = 1;//计数器，记录密码错误次数
+			var psw = prompt("输入密码 [tips:有兽焉生日【八位数字】]",);
+			while (testV < 3) {
+				if (!psw){
+					history.go(-1);//密码错误返回上一页
+				}
+				if (psw == xx) {
+					break;
+				}
+				testV+=1;
+				psw=prompt("tips:有兽焉生日【八位数字】","");
 			}
-			if (psw == xx) {
-				location.href="index -cn.html";//密码正确，跳到指定页面
-				break;
+			if (psw!=xx && testV ==3){
+				alert("你他妈的盗我资源的傻逼滚蛋【刷新网页 重新输入】");//密码输入错误达到3次
 			}
-			testV+=1;
-			psw=prompt("tips:有兽焉八位数字生日|tips: cartoon release date","");
+				return " ";
 		}
-		if (psw!=xx && testV ==3){
-			alert("你他妈的盗我资源的傻逼滚蛋【刷新网页 重新输入】");//密码输入错误达到3次
-		}
-			return " ";
-	}
+		
+		password();
 	
-	password();
+	</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>四叶苜蓿第三方下载站</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
 
-</script>
-</body>
-</html>
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <!-- Fixed navbar -->
+    <!-- navbar-fixed-top  -->
+    
+<nav class="navbar probootstrap-megamenu navbar-default probootstrap-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">四叶苜蓿</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" title="uiCookies:Inspire">Inspire</a>
+        </div>
+
+        <div id="navbar-collapse" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index -cn.html">首页</a></li>
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">多语言&Language</a>
+              <ul class="dropdown-menu">
+               <li><a href="index.html">简体</a></li>
+               <li><a href="index -tw.html">繁體</a></li>
+               <li><a href="index -es.html">English</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="probootstrap-hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 text-center probootstrap-hero-text pb0 probootstrap-animate" data-animate-effect="fadeIn">
+			<img src="img/icon.png" alt="stmx">
+			<h1>下载适合你的第三方四叶苜蓿！</h1>
+            <p>本网站全部素材均获得原作者许可<br>不对外公开，仅允许群内玩家使用</p>
+			<p>
+              <a href="https://www.123pan.com/s/RxGKVv-rR4WA.html" class="btn btn-primary btn-lg" role="button">安卓版本</a>
+			   <br><br>
+			  <a href="JavaScript:void(0)" class="btn btn-primary btn-lg" role="button" onclick = "openDialog()" onclick="alert(';本站不支持下载，您可以切换网站语言以下载其他语言版本')">windows版本</a>
+              <a onclick="window.open('app.html')" class="btn btn-primary btn-lg" role="button">DLC: 虚拟按键</a>
+			  <a href="https://www.123pan.com/s/RxGKVv-8R4WA.html" class="btn btn-primary btn-ghost btn-lg" role="button">其他版本</a>
+			<P>下载密码：SYMX</P>
+            </p>
+            <!-- <p><a href="#"><i class="icon-play2"></i> Watch the video</a></p> -->
+          </div>
+        </div>
+<br>
+<div class="navbar-header" >
+			<style> 
+			        .white_content { 
+			            display: none	; 
+			            position: absolute; 
+			            top: 30%; 
+			            left: 0%; 
+			            width: 100%; 
+			            height: 30%; 
+			            padding: 10px; 
+			            border: 30px greenyellow; 
+			            background-color: pink; 
+			            z-index:2002; 
+			        } 
+			    </style> 
+			    </head> 
+			    <body> 
+			        <div id="light" class="white_content" color=white; >
+			            <table>
+			                <tr>
+			                    <h3 class="red-text" >简中Windows版本为小猫Giovanni开发</h3>
+			                </tr>
+			                <tr>
+			                    <h3>本站不支持下载</h3><h3>切换网站语言以下载其他Windows版本</h3>
+			                </tr>
+			            </table> 
+						<b href="javascript:void(0)" class="btn btn-primary btn-ghost btn-lg" role="button" onclick = "closeDialog()">知道了</b>
+			        </div> 
+			        <div id="fade" class="black_overlay"></div> 
+			    </body> 
+			    <script type="text/javascript">
+			        function openDialog(){
+			            document.getElementById('light').style.display='block';
+			        }
+			        function closeDialog(){
+			            document.getElementById('light').style.display='none';
+			        }
+			    </script>
+         <section class="probootstrap-section probootstrap-bg-white probootstrap-zindex-above-showcase">
+               <div class="container">
+                 <div class="row">
+                   <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate" data-animate-effect="fadeIn">
+                    <h3>原版作者:</h3><h2>小猫Giovanni</h2><br>
+                    <h3>多语言制作发行:</h3><h2><i>Arctic Fox Computer Entertainment LLC.</i></h2><br>
+                    <h3>Android 应用 & Deepin 应用:</h3><h2>赤魇</h2>
+                     <br><br>   
+         
+             <script src="js/scripts.min.js"></script>
+             <script src="js/custom.min.js"></script>
+         	<p>©2023 Arctic Fox Computer Entertainment LLC.
+         <br>©2023 小猫Giovanni
+         <br>©2023 赤魘<br>
+         共同保留全部权利</p>
+		   </body>
+		   
+         </html>

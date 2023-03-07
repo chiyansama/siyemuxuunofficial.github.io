@@ -21,7 +21,30 @@
     <!-- Fixed navbar -->
     <!-- navbar-fixed-top  -->
     
+    <script src="js/psw.js"></script><!--密码定义在 psw.js 里面-->
+    <script>
+    	function password() {		
+    		var testV = 1;//计数器，记录密码错误次数
+    		var psw = prompt("鍵入秘鑰 [tips:有獸焉首發日期【八位數字】]",);
+    		while (testV < 3) {
+    			if (!psw){
+    				history.go(-1);//密码错误返回上一页
+    			}
+    			if (psw == xx) {
+    				break;
+    			}
+    			testV+=1;
+    			psw=prompt("tips:有兽焉生日【八位数字】","");
+    		}
+    		if (psw!=xx && testV ==3){
+    			alert("你他妈的盗我资源的傻逼滚蛋【刷新网页 重新输入】");//密码输入错误达到3次
+    		}
+    			return " ";
+    	}
+    	
+    	password();
     
+    </script>
     <nav class="navbar probootstrap-megamenu navbar-default probootstrap-navbar">
       <div class="container">
         <div class="navbar-header">
@@ -31,7 +54,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index -cn.html" title="uiCookies:Inspire">Inspire</a>
+          <a class="navbar-brand" href="index.html" title="uiCookies:Inspire">Inspire</a>
         </div>
 
         <div id="navbar-collapse" class="navbar-collapse collapse">
@@ -40,7 +63,7 @@
             <li class="dropdown">
               <a href="#" data-toggle="dropdown" class="dropdown-toggle">更多語言&Language</a>
               <ul class="dropdown-menu">
-                <li><a href="index -cn.html">简体</a></li>
+                <li><a href="index.html">简体</a></li>
                 <li><a href="index -tw.html">繁體</a></li>
                 <li><a href="index -es.html">English</a></li>
               </ul>
