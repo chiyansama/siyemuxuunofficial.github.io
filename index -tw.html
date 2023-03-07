@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	  <script>
-	  var _hmt = _hmt || [];
-	  (function() {
-	    var hm = document.createElement("script");
-	    hm.src = "https://hm.baidu.com/hm.js?868954d6a2bad9399a1f572c7f4abb53";
-	    var s = document.getElementsByTagName("script")[0]; 
-	    s.parentNode.insertBefore(hm, s);
-	  })();
-	  </script>
-
+        <SCRIPT LANGUAGE="JavaScript">
+            function password() 
+            {
+                var testV = 1;
+                var pass1 = prompt('輸入8位網站秘鑰:【提示：有獸焉生日】','');
+                while (testV < 3) 
+                {
+                    if (!pass1)
+                    history.go(-1);
+                    if (pass1 == "20171015") 
+                    {
+                        alert('密码正确!');
+                        break;
+                    }
+                    testV+=1;
+                    var pass1 =
+                    prompt('密码错误!请重新输入:');
+                }
+                if (pass1!="password" & testV ==3)
+                history.go(-1);
+                return " ";
+            }
+            document.write(password());
+        </SCRIPT>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>首页</title>
