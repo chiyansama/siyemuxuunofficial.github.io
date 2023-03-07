@@ -17,34 +17,16 @@
     <![endif]-->
   </head>
   <body>
-    
-    <!-- Fixed navbar -->
-    <!-- navbar-fixed-top  -->
-    
-    <script src="js/psw.js"></script><!--密码定义在 psw.js 里面-->
-    <script>
-    	function password() {		
-    		var testV = 1;//计数器，记录密码错误次数
-    		var psw = prompt("鍵入秘鑰 [tips:有獸焉首發日期【八位數字】]",);
-    		while (testV < 3) {
-    			if (!psw){
-    				history.go(-1);//密码错误返回上一页
-    			}
-    			if (psw == xx) {
-    				break;
-    			}
-    			testV+=1;
-    			psw=prompt("tips:有兽焉生日【八位数字】","");
-    		}
-    		if (psw!=xx && testV ==3){
-    			alert("你他妈的盗我资源的傻逼滚蛋【刷新网页 重新输入】");//密码输入错误达到3次
-    		}
-    			return " ";
-    	}
-    	
-    	password();
-    
-    </script>
+	  <script type="text/javascript">   
+	  loopy()   
+	  function loopy() {   
+	  var sWord =""  
+	  while (sWord != "20171015") {//设置密码 初始密码tzpr.cn
+	  sWord = prompt("有獸焉的生日是哪年哪月哪日？")   
+	  }   
+	  alert("驗證成功")   
+	  }   
+	  </script> 
     <nav class="navbar probootstrap-megamenu navbar-default probootstrap-navbar">
       <div class="container">
         <div class="navbar-header">
